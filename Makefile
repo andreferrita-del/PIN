@@ -1,0 +1,6 @@
+.PHONY: all clean
+all:
+	./build.sh
+
+clean:
+	rm -f build/windows/pin.exe

@@ -1,0 +1,10 @@
+function greet(name) {
+    return "Hello from " + name
+}
+
+let language = "PIN"
+print(greet(language))
+
+let values = [10, 20, 30]
+print(values)
+print(len(values))

@@ -1,0 +1,32 @@
+function factorial(n) {
+    if (n <= 1) {
+        return 1
+    }
+
+    return n * factorial(n - 1)
+}
+
+function greet(name) {
+    return "Hello, " + name
+}
+
+let numbers = [10, 20, 30, 40]
+
+print(greet("PIN"))
+print("Factorial:")
+print(factorial(5))
+
+print("Array:")
+print(numbers[0])
+print(numbers[2])
+
+print("Loop:")
+for item in numbers {
+    print(item)
+}
+
+print("Standard library:")
+print(len(numbers))
+print(sqrt(81))
+print(upper("pin language"))
+print(type(numbers))
