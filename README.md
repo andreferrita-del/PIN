@@ -1,7 +1,7 @@
 PIN
 
 <p align="center">
-  <img src="icons/file_00000000f3a4820eb8d8b3137b4f4752.webp" width="180" alt="PIN Logo">
+  <img src="icon/file_00000000f3a4820eb8d8b3137b4f4752.webp" width="180" alt="PIN Logo">
 </p><h3 align="center">A Compiler Made in C++</h3><p align="center">
   A programming language built from scratch in C++.
 </p><p align="center">
