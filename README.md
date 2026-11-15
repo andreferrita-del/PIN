@@ -6,7 +6,7 @@ PIN
   A programming language built from scratch in C++.
 </p><p align="center">
   <img src="https://img.shields.io/badge/Language-C++-blue?style=flat-square" alt="C++">
-  <img src="https://img.shields.io/badge/Version-0.6-beta-purple?style=flat-square" alt="Version 0.6">
+  <img src="https://img.shields.io/badge/Version-0.6-purple?style=flat-square" alt="Version 0.6">
   <img src="https://img.shields.io/badge/Status-Development-orange?style=flat-square" alt="Development">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=flat-square" alt="Platforms">
 </p>---
