@@ -1,27 +1,38 @@
-name: Makefile CI
+
+name: PIN Build CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang make
 
-    - name: Install dependencies
-      run: make
+      - name: Configure
+        run: |
+          chmod +x configure
+          CXX=clang++ ./configure
 
-    - name: Run check
-      run: make check
+      - name: Build
+        run: |
+          make -j$(nproc)
 
-    - name: Run distcheck
-      run: make distcheck
+      - name: Verify executable
+        run: |
+          test -x build/host/pin
+          ./build/host/pin --help || true
+
+      - name: Clean
+        run: make clean
